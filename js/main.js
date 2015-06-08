@@ -88,5 +88,7 @@
 
 
   var clock = new Clock(ctx, radius);
-  setInterval(clock.drawClock(this), 1000);
+  setInterval(function() {
+    clock.drawClock(this)
+  },1000);
 })();
